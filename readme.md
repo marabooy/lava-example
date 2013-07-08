@@ -1,8 +1,14 @@
 #Lava Api example using PHP
 
+##Register as A developer on lava
+
+Register as a developer on lava and get your application tokens 
+[Register application ](http://lavaapi.qwkpy.com/)
+
+
 ###install composer 
 
-[Composer instalation ](http://phpmaster.com/php-dependency-management-with-composer/)
+[Composer instalation ](http://getcomposer.org/download/)
 
 ###Install dependencies
 
@@ -20,12 +26,12 @@ replace all the values with
 if using apache the document root should be the www sub folder if using php 5.4 and above 
 cd into the directory and run 
 
-```php -S localhost:8000 -t www ```
+``` php -S localhost:8000 -t www ```
 
-now point your browser to  localhost:8000 
+> now point your browser to  localhost:8000 
 
 this example uses the oauth-php library found on http://code.google.com/p/oauth-php/ for authentication
+
 it also uses the guzzle php library with the oauth plugin http://guzzlephp.org/#
 
-it uses also the twig library http://twig.sensiolabs.org/ 
-for the view using silex microframework http://silex.sensiolabs.org/ 
+it  also uses the twig library http://twig.sensiolabs.org/ and the silex microframework http://silex.sensiolabs.org/ 
