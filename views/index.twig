@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Lava Example</title>
+    </head>
+    <body>
+        <h3>This is an example application consuming the lava api</h3>
+        <p>This applications source can be found at</p>
+        <p><a href="https://bitbucket.org/sapama/lava-php-example/">lava-php-example</a></p>
+            
+        {% if user %}
+        <h4>Tokens and config used Used</h4>
+
+                {{ dump(tokens)}}
+
+        <h4>The user object</h4>
+
+                {{ dump(user)}}
+
+            {% else %}
+        <h4>Error</h4>
+        I guess things didn't go as we expected.
+        Yikes!
+        {% endif %}
+        <p>The code for this can be found at <a href="https://bitbucket.org/sapama/lava-php-example/" >Bitbucket</a></p>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/journal/bootstrap.min.css"/>
+
+    </body>
+
+</html>

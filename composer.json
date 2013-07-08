@@ -1,0 +1,27 @@
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "oauth-php/oauth-php",
+                "version": "175",
+                "source": {
+                    "url": "http://oauth-php.googlecode.com/svn/",
+                    "type": "svn",
+                    "reference": "trunk/"
+                },
+                "autoload": {
+                    "classmap": ["library/"]
+                }
+            }
+        }
+    ],
+    "name": "Edwin  Mugendi <edwinmugendi@gmail.com>",
+    "require": {
+        "guzzle/guzzle": "v3.7.1",
+        "silex/silex": "~1.0",
+        "guzzle/plugin": "v3.7.1",
+        "oauth-php/oauth-php": "*",
+        "twig/twig": ">=1.8,<2.0-dev"
+    }
+}
