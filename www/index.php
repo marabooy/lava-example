@@ -5,8 +5,6 @@ define('OAUTH_HOST', 'http://lavaapi.qwkpy.com/'); ///replace this with your own
 //define the callback url this is the same as the application url
 
 define('CALLBACK_URL', 'http://localhost:8000'); //replace this with your own note since this a server application you cannot use the oob option
-
-
 //include the autoload script
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -98,6 +96,11 @@ $app->get('/',
             }
         });
 
+$app->get('login',
+        function(Application $app) {
+
+            return $app['twig']->render('form.twig');
+        });
 
 
 $app['debug'] = true;

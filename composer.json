@@ -18,10 +18,15 @@
     ],
     "name": "Edwin  Mugendi <edwinmugendi@gmail.com>",
     "require": {
-        "guzzle/guzzle": "v3.7.1",
+        "guzzle/guzzle": "~v3.7.1",
         "silex/silex": "~1.0",
-        "guzzle/plugin": "v3.7.1",
+        "guzzle/plugin": "~v3.7.1",
         "oauth-php/oauth-php": "*",
         "twig/twig": ">=1.8,<2.0-dev"
-    }
+    },
+        "config": {
+    "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
+
 }
