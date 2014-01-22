@@ -4,7 +4,9 @@
 define('OAUTH_HOST', 'http://lavaapi.qwkpy.com/'); ///replace this with your own
 //define the callback url this is the same as the application url
 
-define('CALLBACK_URL', 'http://localhost:8000'); //replace this with your own note since this a server application you cannot use the oob option
+//replace this with your own note since this a server application you cannot use the oob option
+//oob (Out of Band)
+define('CALLBACK_URL', 'http://localhost:8000');
 //include the autoload script
 require_once __DIR__ . '/../vendor/autoload.php';
 
